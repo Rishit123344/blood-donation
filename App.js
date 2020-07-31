@@ -43,7 +43,7 @@ const TabNavigator = createBottomTabNavigator({
       }
       else  if(routeName === 'CampSearch'){
         return(
-          <Image source = {require('./assets/blood3.jpg')} style={{width:40,height:40}}/>
+          <Image source = {require('./assets/logo.jpg')} style={{width:40,height:40}}/>
         )
       }
     }
@@ -57,7 +57,7 @@ const AppContainer = createAppContainer(SwitchNavigator)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffff',
     alignItems: 'center',
     justifyContent: 'center',
   },

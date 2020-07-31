@@ -36,6 +36,7 @@ City:''
          
         <KeyboardAvoidingView style={styles.container}>
              <Text style={{marginLeft:30,marginTop:0,fontSize:70}}>Camp Info</Text>
+             <Text style={{fontSize:20}}>To be filled by doctors to locate where the camp is held</Text>
             <View>
           <TextInput onChangeText={(text)=>{this.setState({
             Location:text
@@ -53,7 +54,7 @@ City:''
             PhoneNumber:text
           })}}value={this.state.PhoneNumber} style={styles.inputboxStyle}placeholder='Phone Number'/>
 </View>
-<TouchableOpacity style={{marginBottom:0,marginLeft:0}}onPress={async()=>{
+<TouchableOpacity style={{marginBottom:30}}onPress={async()=>{
         var userCamp = await this.submitForm()
       }}>
       <Text style={styles.buttontext}>Submit</Text>
@@ -66,9 +67,8 @@ City:''
 
     buttontext: {
       textAlign: 'center',
-      fontSize: 30,
+      fontSize: 40,
       fontWeight: 'bold',
-     
     },
     displayText: {
       textAlign: 'center',
@@ -76,18 +76,19 @@ City:''
     },
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#ffe9c5',
       alignItems: 'center',
       justifyContent: 'center',
     },
     
     inputboxStyle:{
-        marginTop: 10,
+        marginTop: 50,
         width: 300,
         alignSelf: 'center',
         height: 40,
         textAlign: 'center',
         borderWidth: 4,
+        backgroundColor:'white'
     },
    
 })

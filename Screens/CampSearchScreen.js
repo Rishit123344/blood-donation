@@ -64,6 +64,9 @@ var text = text.toUpperCase()
                 <Text>Search</Text>
             </TouchableOpacity>
             </View>
+            <View>
+            <Text style={{fontSize:20,borderWidth:2}}>Search For Blood Donation Camps</Text>
+            </View>
 <FlatList data={this.state.allcamps}
 renderItem={({item})=>(
 <View style={{borderBottomWidth:2}}>
@@ -82,22 +85,24 @@ renderItem={({item})=>(
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        marginTop:20
+        marginTop:20,
+        backgroundColor:'#cedebd'
     },
     searchbar:{
 flexDirection:'row',
 height:40,
 width:'auto',
-borderWidth:0.5,
+borderWidth:2,
 alignItems:'center',
-backgroundColor:'gray'
+backgroundColor:'white'
     },
     bar:{
 borderWidth:2,
 height:30,
-width:300,
-paddingLeft:10
-    },
+width:400,
+paddingLeft:10,
+fontSize:25
+},
     searchbutton:{
         borderWidth:1,
         height:30,

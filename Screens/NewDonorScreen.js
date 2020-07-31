@@ -93,7 +93,7 @@ Gender:''
           textAlign: 'center',
           fontSize: 30,
           fontWeight: 'bold',
-          color:'#6a2c70'
+          color:'black'
         },
         displayText: {
           textAlign: 'center',
@@ -101,7 +101,7 @@ Gender:''
         },
         container: {
           flex: 1,
-          backgroundColor: '#f08a5d',
+          backgroundColor: '#aa96da',
           alignItems: 'center',
           justifyContent: 'center',
         },

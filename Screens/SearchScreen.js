@@ -143,20 +143,20 @@ if(enteredText[0].toUpperCase()==='B'){
       render(){
         return(
           
-        <View style={styles.container}>
-        <View style={styles.searchbar}>
-            <TextInput style={styles.bar}placeholder="Enter Blood Group"onChangeText={(text)=>{this.setState({
-                search:text
-                        })}}></TextInput>
-            <TouchableOpacity style={styles.searchbutton}onPress={()=>{
-                this.searchDonors(this.state.search)
-            }}>
-                <Text>Search</Text>
-            </TouchableOpacity>
-            </View>
+            <View style={styles.container}>
+            <View style={styles.searchbar}>
+                <TextInput style={styles.bar}placeholder="Enter you'r BloodGroup"onChangeText={(text)=>{this.setState({
+                    search:text
+                            })}}></TextInput>
+                <TouchableOpacity style={styles.searchbutton}onPress={()=>{
+                    this.searchDonors(this.state.search)
+                }}>
+                    <Text>Search</Text>
+                </TouchableOpacity>
+                </View>
 <FlatList data={this.state.alldonors}
 renderItem={({item})=>(
-<View style={{borderBottomWidth:2}}>
+<View style={{borderBottomWidth:2,color:'white',}}>
 <Text>{'BloodGroup:'+item.BloodGroup}</Text>
 <Text>{'Name:'+item.Name}</Text>
 <Text>{'Age:'+item.Age}</Text>
@@ -172,21 +172,22 @@ renderItem={({item})=>(
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        marginTop:20
+        marginTop:20,
+        backgroundColor:'#b2ebf2'
     },
     searchbar:{
 flexDirection:'row',
 height:40,
-width:'auto',
-borderWidth:0.5,
+borderWidth:2,
 alignItems:'center',
-backgroundColor:'white',
+backgroundColor:'white'
     },
     bar:{
 borderWidth:2,
 height:30,
-width:300,
-paddingLeft:10
+width:400,
+paddingLeft:10,
+fontSize:25
     },
     searchbutton:{
         borderWidth:1,
