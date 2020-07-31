@@ -69,11 +69,11 @@ var text = text.toUpperCase()
             </View>
 <FlatList data={this.state.allcamps}
 renderItem={({item})=>(
-<View style={{borderBottomWidth:2}}>
-<Text>{'PhoneNumber:'+item.PhoneNumber}</Text>
-<Text>{'City:'+item.City}</Text>
-<Text>{'Location:'+item.Location}</Text>
-<Text>{'Time:'+item.Time}</Text>
+<View style={{borderBottomWidth:1,padding:10}}>
+<Text>{'PhoneNumber: '+item.PhoneNumber}</Text>
+<Text>{'City: '+item.City}</Text>
+<Text>{'Location: '+item.Location}</Text>
+<Text>{'Time: '+item.Time}</Text>
 </View>
 )} keyExtractor={(item,index)=>index.toString()} onEndReached={this.fetchMoreDonor} onEndReachedThreshold={0.7}>
     
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         marginTop:20,
-        backgroundColor:'#cedebd'
+        backgroundColor:'#ffe9c5'
     },
     searchbar:{
 flexDirection:'row',
@@ -99,7 +99,7 @@ backgroundColor:'white'
     bar:{
 borderWidth:2,
 height:30,
-width:400,
+width:300,
 paddingLeft:10,
 fontSize:25
 },
@@ -109,7 +109,7 @@ fontSize:25
         width:50,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'green'
+        backgroundColor:'#96bb7c'
     }
 })
 

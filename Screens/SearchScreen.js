@@ -156,7 +156,7 @@ if(enteredText[0].toUpperCase()==='B'){
                 </View>
 <FlatList data={this.state.alldonors}
 renderItem={({item})=>(
-<View style={{borderBottomWidth:2,color:'white',}}>
+<View style={{borderBottomWidth:2,padding:10}}>
 <Text>{'BloodGroup:'+item.BloodGroup}</Text>
 <Text>{'Name:'+item.Name}</Text>
 <Text>{'Age:'+item.Age}</Text>
@@ -173,19 +173,19 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         marginTop:20,
-        backgroundColor:'#b2ebf2'
+        backgroundColor:'#ffe9c5'
     },
     searchbar:{
 flexDirection:'row',
 height:40,
-borderWidth:2,
+borderWidth:1,
 alignItems:'center',
 backgroundColor:'white'
     },
     bar:{
 borderWidth:2,
 height:30,
-width:400,
+width:300,
 paddingLeft:10,
 fontSize:25
     },
@@ -195,7 +195,7 @@ fontSize:25
         width:50,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'green'
+        backgroundColor:'#96bb7c'
     }
 })
 

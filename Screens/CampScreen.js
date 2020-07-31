@@ -69,7 +69,7 @@ City:''
       textAlign: 'center',
       fontSize: 40,
       fontWeight: 'bold',
-    },
+       },
     displayText: {
       textAlign: 'center',
       fontSize: 30,
@@ -87,7 +87,7 @@ City:''
         alignSelf: 'center',
         height: 40,
         textAlign: 'center',
-        borderWidth: 4,
+        borderWidth: 2,
         backgroundColor:'white'
     },
    

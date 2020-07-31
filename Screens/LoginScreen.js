@@ -23,25 +23,25 @@ showModal=()=>{
         <ScrollView style={{width:'100%'}}>
           <KeyboardAvoidingView style={styles.KeyboardAvoidingView}>
             <Text style={styles.ModalTitle}>Registration</Text>
-            <TextInput style={styles.formtextinput}placeholder="first name"maxLength={8} onChangeText={(text)=>{this.setState({
+            <TextInput style={styles.formtextinput}placeholder="first name" maxLength={100000} onChangeText={(text)=>{this.setState({
                     firstName:text
                 })}}></TextInput>
-                 <TextInput style={styles.formtextinput}placeholder="last name"maxLength={8} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.formtextinput}placeholder="last name" maxLength={100000} onChangeText={(text)=>{this.setState({
                     lastName:text
                 })}}></TextInput>
                  <TextInput style={styles.formtextinput}placeholder="address"multiline={true} onChangeText={(text)=>{this.setState({
                     address:text
                 })}}></TextInput>
-                 <TextInput style={styles.formtextinput}placeholder="contact number"maxLength={10}keyboardType={'numeric'} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.formtextinput}placeholder="contact number" maxLength={100000}keyboardType={'numeric'} onChangeText={(text)=>{this.setState({
                     contact:text
                 })}}></TextInput>
-                 <TextInput style={styles.formtextinput}placeholder="E-mail"keyboardType={'email-address'} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.formtextinput}placeholder="E-mail" keyboardType={'email-address'} onChangeText={(text)=>{this.setState({
                     emailID:text
                 })}}></TextInput>
-                 <TextInput style={styles.formtextinput}placeholder="password"secureTextEntry={true} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.formtextinput}placeholder="password" secureTextEntry={true} onChangeText={(text)=>{this.setState({
                     password:text
                 })}}></TextInput>
-                 <TextInput style={styles.formtextinput}placeholder="confirm password"secureTextEntry={true} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.formtextinput}placeholder="confirm password" secureTextEntry={true} onChangeText={(text)=>{this.setState({
                   confirmPassword:text
                 })}}></TextInput>
                 <View style={styles.modalbackbutton}>
@@ -129,10 +129,10 @@ render(){
                 <Image source={require("../assets/bank.png")}style={{width:250,height:250,marginBottom:70,}}/>
             </View>
             <View>
-                <TextInput style={styles.loginBox}placeholder="The gmail is abc@gmail.com"keyboardType='email-address'onChangeText={(text)=>{this.setState({
+                <TextInput style={styles.loginBox}placeholder="enter gmail abc@gmail.com" keyboardType='email-address'onChangeText={(text)=>{this.setState({
                     emailID:text
                 })}}></TextInput>
-                 <TextInput style={styles.loginBox}placeholder="The paasword is 123456"secureTextEntry={true} onChangeText={(text)=>{this.setState({
+                 <TextInput style={styles.loginBox}placeholder="enter password" secureTextEntry={true} onChangeText={(text)=>{this.setState({
                     password:text
                 })}}></TextInput>
             </View>
@@ -217,7 +217,7 @@ container:{
       },
       formtextinput:{
         width:'75%',
-        height:35,
+        height:45,
         alignSelf:'center',
         borderColor:'black',
         borderRadius:10,
